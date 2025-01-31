@@ -21,9 +21,6 @@ if st.button("Predict Sentiment"):
     if review_text:
         # Predict sentiment using the BERT model
         result = nlp(review_text)
-
-        # Display the result
-        st.write(f"Prediction Raw Output: {result}")
         
         # Display sentiment as positive or negative
         sentiment = result[0]['label']
